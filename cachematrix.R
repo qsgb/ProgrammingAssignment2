@@ -4,10 +4,17 @@
 ## The fist fuction creat a matrix which cache its inverse 
 
 makeCacheMatrix <- function(x = matrix()) {
+<<<<<<< HEAD
   inverse.cache <-NULL## creat an empty matrix for the inverse matrix, the value is NA 
   set <- function(y) { ## set function is used to change the matrix when required 
     x <<- y
     inverse.cache <<- NULL ## once the matrix changed, the inverse matrix will set to empty
+=======
+  inverse.cache <-NULL## creat cached matrix 
+  set <- function(y) { ## set function is used to change the matrix when required 
+    x <<- y
+    inverse.cache <<- NULL ## once the matrix changed, the inverse matrix will set to NULL
+>>>>>>> origin/master
   }
   get <- function() x  ## show the values of the current matrix
   set.inverse <- function(inverse) inverse.cache<<- inverse ## cache the inverse matrix
